@@ -1,0 +1,782 @@
+
+C:\Users\Lenovo\PycharmProjects>django-admin startproject django_project
+
+C:\Users\Lenovo\PycharmProjects>cd django_project
+
+C:\Users\Lenovo\PycharmProjects\django_project>tree
+Folder PATH listing
+Volume serial number is 1A9C-9EBF
+C:.
+└───django_project
+
+C:\Users\Lenovo\PycharmProjects\django_project>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 21, 2022 - 11:58:36
+Django version 4.0.1, using settings 'django_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[21/Jan/2022 11:58:50] "GET / HTTP/1.1" 200 10697
+[21/Jan/2022 11:58:50] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[21/Jan/2022 11:58:51] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[21/Jan/2022 11:58:51] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[21/Jan/2022 11:58:51] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+
+C:\Users\Lenovo\PycharmProjects\django_project>python manage.py startapp blog
+
+C:\Users\Lenovo\PycharmProjects\django_project>clr
+'clr' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\PycharmProjects\django_project>tree
+Folder PATH listing
+Volume serial number is 1A9C-9EBF
+C:.
+├───.idea
+│   └───inspectionProfiles
+├───blog
+│   └───migrations
+└───django_project
+    └───__pycache__
+
+C:\Users\Lenovo\PycharmProjects\django_project>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 21, 2022 - 12:09:51
+Django version 4.0.1, using settings 'django_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Not Found: /
+[21/Jan/2022 12:10:00] "GET / HTTP/1.1" 404 2172
+[21/Jan/2022 12:11:36] "GET /blog HTTP/1.1" 301 0
+[21/Jan/2022 12:11:36] "GET /blog/ HTTP/1.1" 200 18
+C:\Users\Lenovo\PycharmProjects\django_project\django_project\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 21, 2022 - 12:26:20
+Django version 4.0.1, using settings 'django_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[21/Jan/2022 12:26:25] "GET /blog/ HTTP/1.1" 200 18
+[21/Jan/2022 12:26:32] "GET /blog/about HTTP/1.1" 301 0
+[21/Jan/2022 12:26:32] "GET /blog/about/ HTTP/1.1" 200 19
+Not Found: /
+[21/Jan/2022 12:26:42] "GET / HTTP/1.1" 404 2172
+C:\Users\Lenovo\PycharmProjects\django_project\blog\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 21, 2022 - 12:32:21
+Django version 4.0.1, using settings 'django_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Not Found: /blog/about/
+[21/Jan/2022 12:32:24] "GET /blog/about/ HTTP/1.1" 404 2455
+[21/Jan/2022 12:32:29] "GET / HTTP/1.1" 200 18
+C:\Users\Lenovo\PycharmProjects\django_project\blog\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 21, 2022 - 12:37:09
+Django version 4.0.1, using settings 'django_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+C:\Users\Lenovo\PycharmProjects\django_project\django_project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Python39\lib\threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "C:\Python39\lib\threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Python39\lib\site-packages\django\utils\autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\core\management\commands\runserver.py", line 115, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Python39\lib\site-packages\django\utils\autoreload.py", line 87, in raise_last_exception
+    raise _exception[1]
+  File "C:\Python39\lib\site-packages\django\core\management\__init__.py", line 381, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Python39\lib\site-packages\django\utils\autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Python39\lib\site-packages\django\apps\registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "C:\Python39\lib\site-packages\django\apps\config.py", line 211, in create
+    mod = import_module(mod_path)
+  File "C:\Python39\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'blogs'
+
+C:\Users\Lenovo\PycharmProjects\django_project>python manage.py runserver
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Python39\lib\threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "C:\Python39\lib\threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Python39\lib\site-packages\django\utils\autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\core\management\commands\runserver.py", line 115, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Python39\lib\site-packages\django\utils\autoreload.py", line 87, in raise_last_exception
+    raise _exception[1]
+  File "C:\Python39\lib\site-packages\django\core\management\__init__.py", line 381, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Python39\lib\site-packages\django\utils\autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Python39\lib\site-packages\django\apps\registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "C:\Python39\lib\site-packages\django\apps\config.py", line 211, in create
+    mod = import_module(mod_path)
+  File "C:\Python39\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'blogs'
+C:\Users\Lenovo\PycharmProjects\django_project\django_project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 21, 2022 - 12:46:50
+Django version 4.0.1, using settings 'django_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[21/Jan/2022 12:46:54] "GET / HTTP/1.1" 200 146
+Not Found: /favicon.ico
+[21/Jan/2022 12:46:54] "GET /favicon.ico HTTP/1.1" 404 2455
+C:\Users\Lenovo\PycharmProjects\django_project\blog\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 21, 2022 - 12:48:41
+Django version 4.0.1, using settings 'django_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[21/Jan/2022 12:48:52] "GET /about HTTP/1.1" 301 0
+[21/Jan/2022 12:48:52] "GET /about/ HTTP/1.1" 200 143
+C:\Users\Lenovo\PycharmProjects\django_project\blog\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 21, 2022 - 12:52:37
+Django version 4.0.1, using settings 'django_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+C:\Users\Lenovo\PycharmProjects\django_project\blog\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 21, 2022 - 12:56:20
+Django version 4.0.1, using settings 'django_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[21/Jan/2022 13:00:15] "GET /about/ HTTP/1.1" 200 143
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 500, in parse
+    compile_func = self.tags[command]
+KeyError: 'end-for'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\PycharmProjects\django_project\blog\views.py", line 26, in home
+    return render(request, 'blog/home.html', context)
+  File "C:\Python39\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Python39\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Python39\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Python39\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Python39\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python39\lib\site-packages\django\template\defaulttags.py", line 810, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 502, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 552, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 13: 'end-for', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+[21/Jan/2022 13:00:20] "GET / HTTP/1.1" 500 139235
+[21/Jan/2022 13:00:43] "GET / HTTP/1.1" 200 386
+C:\Users\Lenovo\PycharmProjects\django_project\blog\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 21, 2022 - 13:01:11
+Django version 4.0.1, using settings 'django_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[21/Jan/2022 13:01:12] "GET / HTTP/1.1" 200 387
+[21/Jan/2022 13:01:29] "GET / HTTP/1.1" 200 387
+C:\Users\Lenovo\PycharmProjects\django_project\blog\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 21, 2022 - 13:12:24
+Django version 4.0.1, using settings 'django_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[21/Jan/2022 13:12:24] "GET / HTTP/1.1" 200 407
+[21/Jan/2022 13:12:32] "GET /about/ HTTP/1.1" 200 177
+[21/Jan/2022 13:19:22] "GET /about/ HTTP/1.1" 200 183
+[21/Jan/2022 13:19:25] "GET / HTTP/1.1" 200 413
+[21/Jan/2022 13:25:11] "GET / HTTP/1.1" 200 1026
+[21/Jan/2022 13:25:37] "GET / HTTP/1.1" 200 1002
+[21/Jan/2022 13:25:49] "GET /about/ HTTP/1.1" 200 796
+[21/Jan/2022 13:27:10] "GET / HTTP/1.1" 200 1002
+[21/Jan/2022 13:37:56] "GET /about/ HTTP/1.1" 200 2591
+[21/Jan/2022 13:37:56] "GET /static/blog/main.css HTTP/1.1" 404 1798
+[21/Jan/2022 13:38:08] "GET / HTTP/1.1" 200 2797
+[21/Jan/2022 13:38:08] "GET /static/blog/main.css HTTP/1.1" 404 1798
+^C
+C:\Users\Lenovo\PycharmProjects\django_project>
+C:\Users\Lenovo\PycharmProjects\django_project>python manage.py runserver
+C:\Users\Lenovo\PycharmProjects\django_project>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 21, 2022 - 13:39:14
+Django version 4.0.1, using settings 'django_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[21/Jan/2022 13:39:21] "GET / HTTP/1.1" 200 2797
+[21/Jan/2022 13:39:21] "GET /static/blog/main.css HTTP/1.1" 200 1207
+[21/Jan/2022 13:39:34] "GET /about/ HTTP/1.1" 200 2591
+[21/Jan/2022 13:39:39] "GET / HTTP/1.1" 200 2797
+[21/Jan/2022 13:39:40] "GET /about/ HTTP/1.1" 200 2591
+[21/Jan/2022 13:41:25] "GET / HTTP/1.1" 200 3431
+[21/Jan/2022 13:41:25] "GET /static/blog/main.css HTTP/1.1" 304 0
+[21/Jan/2022 13:41:27] "GET / HTTP/1.1" 200 3431
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\PycharmProjects\django_project\blog\views.py", line 26, in home
+    return render(request, 'blog/home.html', context)
+  File "C:\Python39\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 176, in render
+    return self._render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Python39\lib\site-packages\django\template\loader_tags.py", line 130, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Python39\lib\site-packages\django\template\loader_tags.py", line 127, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Python39\lib\site-packages\django\template\loader_tags.py", line 106, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Python39\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Python39\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 479, in parse
+    raise self.error(token, e)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 477, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 593, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 692, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% url 'blog-home' %' from '% url 'blog-home' %'
+[21/Jan/2022 13:48:32] "GET / HTTP/1.1" 500 168958
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\PycharmProjects\django_project\blog\views.py", line 26, in home
+    return render(request, 'blog/home.html', context)
+  File "C:\Python39\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 176, in render
+    return self._render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Python39\lib\site-packages\django\template\loader_tags.py", line 130, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Python39\lib\site-packages\django\template\loader_tags.py", line 127, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Python39\lib\site-packages\django\template\loader_tags.py", line 106, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Python39\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Python39\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 479, in parse
+    raise self.error(token, e)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 477, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 593, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 692, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% url 'blog-home' %' from '% url 'blog-home' %'
+[21/Jan/2022 13:48:35] "GET / HTTP/1.1" 500 168958
+[21/Jan/2022 13:50:07] "GET / HTTP/1.1" 200 3432
+[21/Jan/2022 13:50:07] "GET /static/blog/main.css HTTP/1.1" 304 0
+[21/Jan/2022 13:50:08] "GET / HTTP/1.1" 200 3432
+[21/Jan/2022 13:50:09] "GET / HTTP/1.1" 200 3432
+[21/Jan/2022 13:50:10] "GET /about/ HTTP/1.1" 200 2592
+[21/Jan/2022 13:50:11] "GET / HTTP/1.1" 200 3432
+[21/Jan/2022 13:53:52] "GET / HTTP/1.1" 200 3432
+[21/Jan/2022 13:54:15] "GET /admin HTTP/1.1" 301 0
+[21/Jan/2022 13:54:15] "GET /admin/ HTTP/1.1" 302 0
+[21/Jan/2022 13:54:15] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+[21/Jan/2022 13:54:15] "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+[21/Jan/2022 13:54:15] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2616
+[21/Jan/2022 13:54:15] "GET /static/admin/css/login.css HTTP/1.1" 200 954
+[21/Jan/2022 13:54:15] "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+[21/Jan/2022 13:54:15] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3401
+
+C:\Users\Lenovo\PycharmProjects\django_project>python manage.py createsuperuser
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\sqlite3\base.py", line 416, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: auth_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\django_project\manage.py", line 22, in <module>
+    main()
+  File "C:\Users\Lenovo\PycharmProjects\django_project\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Python39\lib\site-packages\django\core\management\__init__.py", line 425, in execute_from_command_line
+    utility.execute()
+  File "C:\Python39\lib\site-packages\django\core\management\__init__.py", line 419, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Python39\lib\site-packages\django\core\management\base.py", line 373, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "C:\Python39\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py", line 79, in execute
+    return super().execute(*args, **options)
+  File "C:\Python39\lib\site-packages\django\core\management\base.py", line 417, in execute
+    output = self.handle(*args, **options)
+  File "C:\Python39\lib\site-packages\django\contrib\auth\management\commands\createsuperuser.py", line 100, in handle
+    default_username = get_default_username(database=database)
+  File "C:\Python39\lib\site-packages\django\contrib\auth\management\__init__.py", line 141, in get_default_username
+    auth_app.User._default_manager.db_manager(database).get(
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 435, in get
+    num = len(clone)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 262, in __len__
+    self._fetch_all()
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1354, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1202, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\sqlite3\base.py", line 416, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: auth_user
+
+C:\Users\Lenovo\PycharmProjects\django_project>python manage.py makemigrations
+No changes detected
+
+C:\Users\Lenovo\PycharmProjects\django_project>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+
+C:\Users\Lenovo\PycharmProjects\django_project>python manage.py createsuperuser
+Username (leave blank to use 'lenovo'): Gauravkk
+Email address: gkathar221@gmail.com
+Password:
+Password (again):
+The password is too similar to the username.
+Bypass password validation and create user anyway? [y/N]:
+Password:
+Password (again):
+Superuser created successfully.
+
+C:\Users\Lenovo\PycharmProjects\django_project>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 21, 2022 - 13:59:06
+Django version 4.0.1, using settings 'django_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[21/Jan/2022 13:59:12] "GET / HTTP/1.1" 200 3432
+[21/Jan/2022 13:59:12] "GET /static/blog/main.css HTTP/1.1" 304 0
+[21/Jan/2022 13:59:18] "GET /admin/ HTTP/1.1" 302 0
+[21/Jan/2022 13:59:18] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+[21/Jan/2022 13:59:30] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[21/Jan/2022 13:59:30] "GET /admin/ HTTP/1.1" 200 3330
+[21/Jan/2022 13:59:31] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+[21/Jan/2022 13:59:31] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[21/Jan/2022 13:59:31] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[21/Jan/2022 13:59:56] "GET /admin/auth/group/ HTTP/1.1" 200 4892
+[21/Jan/2022 13:59:56] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6932
+[21/Jan/2022 13:59:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[21/Jan/2022 13:59:56] "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+[21/Jan/2022 13:59:56] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+[21/Jan/2022 13:59:56] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[21/Jan/2022 13:59:56] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[21/Jan/2022 13:59:56] "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+[21/Jan/2022 13:59:56] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[21/Jan/2022 13:59:56] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+[21/Jan/2022 13:59:56] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+[21/Jan/2022 13:59:56] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[21/Jan/2022 13:59:56] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[21/Jan/2022 14:00:32] "GET /admin/auth/user/ HTTP/1.1" 200 7989
+[21/Jan/2022 14:00:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[21/Jan/2022 14:00:32] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[21/Jan/2022 14:00:32] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[21/Jan/2022 14:00:39] "GET /admin/auth/user/1/change/ HTTP/1.1" 200 15208
+[21/Jan/2022 14:00:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[21/Jan/2022 14:00:40] "GET /static/admin/css/forms.css HTTP/1.1" 200 8835
+[21/Jan/2022 14:00:40] "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4360
+[21/Jan/2022 14:00:40] "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+[21/Jan/2022 14:00:40] "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 12350
+[21/Jan/2022 14:00:40] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+[21/Jan/2022 14:00:40] "GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+[21/Jan/2022 14:00:40] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+[21/Jan/2022 14:00:40] "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[21/Jan/2022 14:00:40] "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+[21/Jan/2022 14:00:40] "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+[21/Jan/2022 14:00:40] "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+[21/Jan/2022 14:00:40] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[21/Jan/2022 14:00:40] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[21/Jan/2022 14:01:31] "GET /admin/auth/user/ HTTP/1.1" 200 7989
+[21/Jan/2022 14:01:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[21/Jan/2022 14:01:35] "GET /admin/auth/user/add/ HTTP/1.1" 200 7014
+[21/Jan/2022 14:01:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[21/Jan/2022 14:01:55] "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+[21/Jan/2022 14:01:55] "GET /admin/auth/user/2/change/ HTTP/1.1" 200 15350
+[21/Jan/2022 14:01:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[21/Jan/2022 14:02:58] "POST /admin/auth/user/2/change/ HTTP/1.1" 302 0
+[21/Jan/2022 14:02:59] "GET /admin/auth/user/ HTTP/1.1" 200 8590
+[21/Jan/2022 14:02:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[21/Jan/2022 14:02:59] "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+[21/Jan/2022 14:03:06] "GET /admin/ HTTP/1.1" 200 3926
+C:\Users\Lenovo\PycharmProjects\django_project\blog\models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 21, 2022 - 14:13:26
+Django version 4.0.1, using settings 'django_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+C:\Users\Lenovo\PycharmProjects\django_project>python manage.py makemigrations
+Migrations for 'blog':
+  blog\migrations\0001_initial.py
+    - Create model Post
+
+C:\Users\Lenovo\PycharmProjects\django_project>python manage.py sql migrate blog 0001
+Unknown command: 'sql'
+Type 'manage.py help' for usage.
+
+C:\Users\Lenovo\PycharmProjects\django_project>python manage.py sqlmigrate blog 0001
+BEGIN;
+--
+-- Create model Post
+--
+CREATE TABLE "blog_post" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "title" varchar(100) NOT NULL, "content" text NOT NULL, "date_posted" datetime NOT NULL, "author_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED);
+CREATE INDEX "blog_post_author_id_dd7a8485" ON "blog_post" ("author_id");
+COMMIT;
+
+C:\Users\Lenovo\PycharmProjects\django_project>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, blog, contenttypes, sessions
+Running migrations:
+  Applying blog.0001_initial... OK
+
+C:\Users\Lenovo\PycharmProjects\django_project>python manage.py shell
+Python 3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from blog.models import Post
+>>> from django.contrib,auth.models import User
+  File "<console>", line 1
+    from django.contrib,auth.models import User
+                       ^
+SyntaxError: invalid syntax
+>>> from django.contrib.auth.models import User
+>>> User.objects.all()
+<QuerySet [<User: Gauravkk>, <User: TestUser>]>
+>>> User.objects.first()
+<User: Gauravkk>
+>>> User.objects.filter(username='Gauravkk')
+<QuerySet [<User: Gauravkk>]>
+>>> User.objects.filter(username='Gauravkk').first()
+<User: Gauravkk>
+>>> user = User.objects.filter(username='Gauravkk').first()
+>>> user
+<User: Gauravkk>
+>>> user.id
+1
+>>> user.pk
+1
+>>> user = User.objects.get(id=1)
+>>> user
+<User: Gauravkk>
+>>> clsrc
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'clsrc' is not defined
+>>> Post.objects.all()
+<QuerySet []>
+>>> post_1 = post(title='Blog1',content='First Post Content!', author=user)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'post' is not defined
+>>> post_1 = Post(title='Blog1',content='First Post Content!', author=user)
+>>> Post.objects.all()
+<QuerySet []>
+>>> post_1.save()
+>>> Post.objects.all()
+<QuerySet [<Post: Post object (1)>]>
+>>> exit()
+
+C:\Users\Lenovo\PycharmProjects\django_project>python manage.py shell
+Python 3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from blog.models import Post
+>>> from django.contrib.auth.models import User
+>>> Post.objects.all()
+<QuerySet [<Post: Blog1>]>
+>>> user = User.objects.filter(username='Gauravkk')
+>>> user
+<QuerySet [<User: Gauravkk>]>
+>>> user = User.objects.filter(username='Gauravkk').first()
+>>> user
+<User: Gauravkk>
+>>> post_2 = Post(title='Blog2', content='Second Post Content!', author_id=user.id
+... post_2 = Post(title='Blog2', content='Second Post Content!', author_id=user.id)
+  File "<console>", line 2
+    post_2 = Post(title='Blog2', content='Second Post Content!', author_id=user.id)
+    ^
+SyntaxError: invalid syntax
+>>> post_2 = Post(title='Blog2', content='Second Post Content!', author_id=user.id)
+>>> post_2.save()
+>>> Post.objects.all()
+<QuerySet [<Post: Blog1>, <Post: Blog2>]>
+>>> post = Post.objects.first()
+>>> post.content
+'First Post Content!'
+>>> post.date_posted
+datetime.datetime(2022, 1, 21, 8, 54, 53, 608616, tzinfo=datetime.timezone.utc)
+>>>
+>>> post.author
+<User: Gauravkk>
+>>> post.author.email
+'gkathar221@gmail.com'
+>>> user
+<User: Gauravkk>
+>>> user.post_set
+<django.db.models.fields.related_descriptors.create_reverse_many_to_one_manager.<locals>.RelatedManager object at 0x0000025B19F5BF40>
+>>> user.post_set.all()
+<QuerySet [<Post: Blog1>, <Post: Blog2>]>
+>>> user.post_set.create(title='Blog 3', content = 'Third Post Content!')
+<Post: Blog 3>
+>>> Post.objects.all()
+<QuerySet [<Post: Blog1>, <Post: Blog2>, <Post: Blog 3>]>
+>>> exit()
+
+C:\Users\Lenovo\PycharmProjects\django_project>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 21, 2022 - 15:12:47
+Django version 4.0.1, using settings 'django_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[21/Jan/2022 15:12:59] "GET / HTTP/1.1" 200 3881
+[21/Jan/2022 15:12:59] "GET /static/blog/main.css HTTP/1.1" 304 0
+[21/Jan/2022 16:04:25] "GET / HTTP/1.1" 200 3857
+[21/Jan/2022 16:04:25] "GET /static/blog/main.css HTTP/1.1" 304 0
+C:\Users\Lenovo\PycharmProjects\django_project\blog\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 21, 2022 - 16:04:54
+Django version 4.0.1, using settings 'django_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[21/Jan/2022 16:04:54] "GET / HTTP/1.1" 200 3857
+[21/Jan/2022 16:05:21] "GET /admin/ HTTP/1.1" 200 3926
+[21/Jan/2022 16:05:24] "GET /admin/ HTTP/1.1" 200 3926
+C:\Users\Lenovo\PycharmProjects\django_project\blog\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 21, 2022 - 16:06:37
+Django version 4.0.1, using settings 'django_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[21/Jan/2022 16:06:39] "GET /admin/ HTTP/1.1" 200 4550
+[21/Jan/2022 16:06:45] "GET /admin/blog/post/ HTTP/1.1" 200 6575
+[21/Jan/2022 16:06:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[21/Jan/2022 16:06:50] "GET /admin/blog/post/1/change/ HTTP/1.1" 200 8632
+[21/Jan/2022 16:06:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[21/Jan/2022 16:07:08] "POST /admin/blog/post/1/change/ HTTP/1.1" 302 0
+[21/Jan/2022 16:07:08] "GET /admin/blog/post/ HTTP/1.1" 200 6768
+[21/Jan/2022 16:07:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[21/Jan/2022 16:07:17] "GET /admin/blog/post/3/change/ HTTP/1.1" 200 8636
+[21/Jan/2022 16:07:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[21/Jan/2022 16:07:35] "POST /admin/blog/post/3/change/ HTTP/1.1" 302 0
+[21/Jan/2022 16:07:35] "GET /admin/blog/post/ HTTP/1.1" 200 6769
+[21/Jan/2022 16:07:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[21/Jan/2022 16:07:41] "GET / HTTP/1.1" 200 3860
