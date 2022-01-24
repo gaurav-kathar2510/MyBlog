@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 
 class Profile(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)   # cascade means that if user is deleted then delete
+    user = models.OneToOneField(User, on_delete=models.CASCADE)   # cascade means that if user is deleted then delete
     # profile but not vice-versa
     image = models.ImageField(default='default.jpg', upload_to='profile_pics')
 
